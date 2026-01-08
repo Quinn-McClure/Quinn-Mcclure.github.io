@@ -24,7 +24,7 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
-                    <h4 className="text-sm font-semibold text-gray-900 mb-4">Created by Frameshift Dev LLC</h4>
+                    <h4 className="text-sm text-gray-900 mb-4">Created by Frameshift Dev LLC</h4>
                 </div>
             </div>
         </footer>

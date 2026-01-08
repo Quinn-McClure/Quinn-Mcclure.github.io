@@ -1,12 +1,15 @@
 const Home = () => {
     return (
-        <>
-            <h1>This is Home</h1>
-            <h3 className="text-lg font-semibold text-white-900 mb-4"> Quinn McClure </h3>
-            <p className="text-sm text-white-600"> 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+            {/* Hero Section */}
+            <p className="text-4xl text-white-600"> 
                 Developer, Writer, Environmental Advocate
             </p>
-        </>
+            {/* About Preview */}
+            {/* <Featured Projects */}
+            {/* Skills/technologies */}
+            {/* Call to action */}
+        </div>
     );
   };
   
