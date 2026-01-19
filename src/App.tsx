@@ -6,10 +6,8 @@ import Contact from './pages/Contact'
 import Layout from './components/Layout/Layout.tsx'
 
 function App() {
-   const basename = import.meta.env.PROD ? '/Quinn-Mcclure.github.io' : '/'
-
   return (
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
