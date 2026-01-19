@@ -1,9 +1,8 @@
-import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
 
 interface HeaderProps {
-    children?: ReactNode
+    
 }
 
 const Header = ({ }: HeaderProps) => {
