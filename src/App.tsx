@@ -7,7 +7,7 @@ import Layout from './components/Layout/Layout.tsx'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Quinn-Mcclure.github.io">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
