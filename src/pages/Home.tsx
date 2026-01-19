@@ -1,4 +1,5 @@
 import heroBg from '../assets/banner-img.png'
+import Button from '../components/Button.tsx'
 
 const Home = () => {
     return (
@@ -13,8 +14,9 @@ const Home = () => {
                     Developer, Writer, Environmental Advocate
                 </p>
             </section>
+
             {/* About Preview */}
-            <section className="py-12 md:py-16">
+            <section className="md:py-16">
                 <p className="text-lg font-bold">About this website</p>
                 <p className="text-base py-2">
                     Hi, there I am Quinn McClure! This website a a culmination of my passion projects and interests that I would like to share with you and the world, whether you are a potential client or 
@@ -23,20 +25,15 @@ const Home = () => {
                 <p className="text-base">
                     If you are interested to hear more about my journey so far, click below
                 </p>
-                <p>About me button</p>
+                <Button to="/about" className="mt-4">About Me</Button>
             </section>
 
             {/* <Featured Projects */}
-            <section className="py-12 md:py-16">
-                <p>Featured Projects</p>
+            <section>
+                <p className="text-lg font-bold">Featured Projects</p>
                 <p>These are a couple of projects that I am most proud of! Click below to explore</p>
                 <p>Grid with 3 projects</p>
-                <p>Button for Projects page</p>
-            </section>
-            
-            {/* Call to action */}
-            <section className="py-12 md:py-16">
-                <p>Call to action</p>
+                <Button to="/projects" className="mt-4">All Projects</Button>
             </section>
         </div>
     );

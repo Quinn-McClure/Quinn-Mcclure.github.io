@@ -62,11 +62,9 @@ const Button = ({
             </Link>
         )
     }
-
-    // Otherwise, render as button
     return (
         <button
-            type={props.type || 'button'}
+            type={('type' in props && props.type) ? props.type : 'button'}
             onClick={props.onClick}
             disabled={disabled}
             className={combinedClassName}
@@ -75,3 +73,5 @@ const Button = ({
         </button>
     )
 }
+
+export default Button
