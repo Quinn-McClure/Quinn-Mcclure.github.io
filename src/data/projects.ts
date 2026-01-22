@@ -7,7 +7,6 @@ export interface Project {
     longDescription: string;
     scope: ProjectScope;
     image?: string;
-    technologies?: string[] | undefined;
     tools?: string[];
     url?: string;
     date?: string;
@@ -20,7 +19,7 @@ export const projects: Project[] = [
         description: "A website I made for Campbell Gutterworks LLC",
         longDescription: "Full Description..",
         scope: 'development',
-        technologies: ['React', 'Tailwind CSS', 'Vite', 'Typescript'],
+        tools: ['React', 'Tailwind CSS', 'Vite', 'Typescript'],
         url: 'https://campbellgutterworks.com/',
         date: '06-20-2025'
     },
@@ -30,17 +29,8 @@ export const projects: Project[] = [
         description: "Movie Reviewing",
         longDescription: "This is an extensive project where I have been writing and reviewing movies on Letterboxd and Instagram for the past 5 years",
         scope: 'writing',
+        tools: ['Instagram', 'Letterboxd', 'Analytical Writing'],
         url: 'https://boxd.it/2R7Q9',
-        date: '06-20-2025'
-    },
-    {
-        id: 1,
-        title: 'Campbell Gutterworks Website',
-        description: "A website I made for Campbell Gutterworks LLC",
-        longDescription: "Full Description..",
-        scope: 'development',
-        technologies: ['React', 'Tailwind CSS', 'Vite', 'Typescript'],
-        url: 'https://campbellgutterworks.com/',
         date: '06-20-2025'
     },
     {
@@ -50,6 +40,24 @@ export const projects: Project[] = [
         longDescription: "This is an extensive project where I have been writing and reviewing movies on Letterboxd and Instagram for the past 5 years",
         scope: 'design',
         url: 'https://www.instagram.com/the.queue__/',
-        date: '06-20-2025'
+        date: ''
+    },
+    {
+        id: 4,
+        title: 'Prices Screenplay',
+        description: "Crime/thriller turned creature feature movie",
+        longDescription: "This is an extensive project where I have been writing and reviewing movies on Letterboxd and Instagram for the past 5 years",
+        scope: 'writing',
+        url: 'https://www.instagram.com/the.queue__/',
+        date: ''
+    },
+    {
+        id: 5,
+        title: 'La Crosse Bike Parking Installation',
+        description: "Crime/thriller turned creature feature movie",
+        longDescription: "This is an extensive project where I have been writing and reviewing movies on Letterboxd and Instagram for the past 5 years",
+        scope: 'design',
+        url: '',
+        date: ''
     }
 ];

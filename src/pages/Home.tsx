@@ -30,9 +30,8 @@ const Home = () => {
 
             {/* <Featured Projects */}
             <section>
-                <p className="text-lg font-bold">Featured Projects</p>
-                <p>These are a couple of projects that I am most proud of! Click below to explore</p>
-                <p>Grid with 3 projects</p>
+                <p className="text-lg font-bold">Projects</p>
+                <p>On display are projects across three of the main facets that I view myself: writing, developing, designing.</p>
                 <Button to="/projects" className="mt-4">All Projects</Button>
             </section>
         </div>

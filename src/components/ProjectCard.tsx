@@ -26,7 +26,7 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                     {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies && project.technologies.map((tech, index) => (
+                    {project.tools && project.tools.map((tech, index) => (
                         <span key={index} className="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">
                             {tech}
                         </span>
@@ -77,9 +77,9 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                                 {project.longDescription}
                             </p>
 
-                            {project.technologies && project.technologies.length > 0 && (
+                            {project.tools && project.tools.length > 0 && (
                                 <div className="flex flex-wrap gap-2 mb-6">
-                                    {project.technologies.map((tech, index) => (
+                                    {project.tools.map((tech, index) => (
                                         <span key={index} className="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">
                                             {tech}
                                         </span>
