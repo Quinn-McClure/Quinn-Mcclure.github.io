@@ -7,11 +7,11 @@ const Home = () => {
             {/* Hero Section */}
             <section 
                 className="min-h-[60vh] flex flex-col justify-center items-center text-center py-12 md:py-20 bg-cover bg-center relative"
-                style={({ backgroundImage: `url(${heroBg})` })}
+                style={{ backgroundImage: `url(${heroBg})` }}
             >
                 <div className="absolute inset-0 bg-black/30" />
                 <p className="text-4xl font-semibold text-white relative z-10"> 
-                    Developer, Writer, Environmental Advocate
+                    Developer, Writer, Designer
                 </p>
             </section>
 
