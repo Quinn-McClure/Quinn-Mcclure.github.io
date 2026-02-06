@@ -16,11 +16,6 @@ const Footer = () => {
                                 LinkedIn
                             </a>
                         </li>
-                        <li>
-                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-gray-900">
-                                Email
-                            </a>
-                        </li>
                     </ul>
                     <h4 className="text-sm text-gray-900 mb-4">Created by Frameshift Dev LLC</h4>
                 </div>
