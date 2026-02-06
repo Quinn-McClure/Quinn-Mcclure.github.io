@@ -32,14 +32,13 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                         </span>
                     ))}
                 </div>
-                {project.url && (
-                    <button
-                        onClick={() => setIsModalOpen(true)}
-                        className="text-blue-400 hover:text-blue-300 transition-colors"
-                    >
-                        View Project →
-                    </button>
-                )}
+                
+                <button
+                    onClick={() => setIsModalOpen(true)}
+                    className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                    View Project →
+                </button>
             </div>
 
             {/* Modal */}
@@ -52,16 +51,12 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                         className="bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* Close Button */}
-                        <button
-                            onClick={() => setIsModalOpen(false)}
-                            className="float-right text-gray-400 hover:text-white text-2xl font-bold mb-4"
-                        >
-                            ×
-                        </button>
-
                         {/* Content */}
                         <div className="clear-both">
+                            <h2 className="text-2xl font-bold text-gray-300 mb-6 leading-relaxed">
+                                {project.title}
+                            </h2>
+
                             {project.image && (
                                 <img
                                     src={project.image}
@@ -69,9 +64,6 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                                     className="w-full h-64 object-cover rounded mb-6"
                                 />
                             )}
-                            <h2 className="text-gray-300 mb-6 leading-relaxed">
-                                {project.title}
-                            </h2>
 
                             <p className="text-gray-300 mb-6 leading-relaxed">
                                 {project.longDescription}
@@ -96,7 +88,7 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                                         Visit Project
                                     </Button>
                                     <Button
-                                        variant="outline"
+                                        variant="primary"
                                         onClick={() => setIsModalOpen(false)}
                                     >
                                         Close

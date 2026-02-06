@@ -31,7 +31,7 @@ const Home = () => {
             {/* <Featured Projects */}
             <section>
                 <p className="text-lg font-bold">Projects</p>
-                <p>On display are projects across three of the main facets that I view myself: writing, developing, designing.</p>
+                <p>On display are projects across three of the main facets that I have a passion for: writing, developing, designing.</p>
                 <Button to="/projects" className="mt-4">All Projects</Button>
             </section>
         </div>
