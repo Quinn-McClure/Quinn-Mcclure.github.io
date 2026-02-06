@@ -7,11 +7,11 @@ const Home = () => {
             {/* Hero Section */}
             <section 
                 className="min-h-[60vh] flex flex-col justify-center items-center text-center py-12 md:py-20 bg-cover bg-center relative"
-                style={({ backgroundImage: `url(${heroBg})` })}
+                style={{ backgroundImage: `url(${heroBg})` }}
             >
                 <div className="absolute inset-0 bg-black/30" />
                 <p className="text-4xl font-semibold text-white relative z-10"> 
-                    Developer, Writer, Environmental Advocate
+                    Developer, Writer, Designer
                 </p>
             </section>
 
@@ -19,7 +19,7 @@ const Home = () => {
             <section className="md:py-16">
                 <p className="text-lg font-bold">About this website</p>
                 <p className="text-base py-2">
-                    Hi, there I am Quinn McClure! This website a a culmination of my passion projects and interests that I would like to share with you and the world, whether you are a potential client or 
+                    Hi, there I am Quinn McClure! This website is a culmination of my passion projects and interests that I would like to share with you and the world, whether you are a potential client or 
                     just interested in what I have to say.
                 </p>
                 <p className="text-base">
@@ -30,9 +30,8 @@ const Home = () => {
 
             {/* <Featured Projects */}
             <section>
-                <p className="text-lg font-bold">Featured Projects</p>
-                <p>These are a couple of projects that I am most proud of! Click below to explore</p>
-                <p>Grid with 3 projects</p>
+                <p className="text-lg font-bold">Projects</p>
+                <p>On display are projects across three of the main facets that I have a passion for: writing, developing, designing.</p>
                 <Button to="/projects" className="mt-4">All Projects</Button>
             </section>
         </div>
