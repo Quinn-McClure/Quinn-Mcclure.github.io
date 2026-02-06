@@ -19,8 +19,12 @@ const Home = () => {
             <section className="md:py-16">
                 <p className="text-lg font-bold">About this website</p>
                 <p className="text-base py-2">
-                    Hi, there I am Quinn McClure! This website is a culmination of my passion projects and interests that I would like to share with you and the world, whether you are a potential client or 
-                    just interested in what I have to say.
+                    Hi, there I am Quinn McClure! This website is a culmination of my passion projects and interests 
+                    that I would like to share with you and the world, whether you are a potential client or just interested 
+                    in what I have created. Initially when I wanted to make this site, I was mainly going to use it as just a
+                    portfolio site for my programming projects for future employers. Thinking deeper however, I realized that
+                    my path wasn't so linear and so I expanded this site to include my writing and design projects because those
+                    are also fields I would like to expand and grow in. 
                 </p>
                 <p className="text-base">
                     If you are interested to hear more about my journey so far, click below
