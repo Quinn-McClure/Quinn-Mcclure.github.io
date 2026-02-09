@@ -25,8 +25,6 @@ const About = () => {
                 </div>
                 {/* Text on the right */}
                 <div className="flex-1 min-w-0">
-                    <p className="text-4xl font-bold">About Me</p>
-                    <p className="text-lg italic">Developer, Writer, Designer</p>
                     <div className="mt-4 space-y-4">
                         <p className="text-base">
                         I am a graduate from the University of Wisconsin - La Crosse, with a bachelor's in Computer Science 
