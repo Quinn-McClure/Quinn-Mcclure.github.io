@@ -8,17 +8,13 @@ interface ProjectCardProps {
 
 const ProjectCard = ({project}: ProjectCardProps) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const maxTools = 3;
+    const toolsToShow = project.tools?.slice(0, maxTools) ?? [];
+    const remainingCount = (project.tools?.length ?? 0) - toolsToShow.length;
 
     return (
         <>
             <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-750 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-                {project.image && (
-                    <img
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-48 object-cover rounded mb-4"
-                    />
-                )}
                 <h3 className="text-xl font-semibold text-white mb-2">
                     {project.title}
                 </h3>
@@ -26,11 +22,17 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                     {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tools && project.tools.map((tech, index) => (
+                    {toolsToShow.map((tech, index) => (
                         <span key={index} className="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">
                             {tech}
                         </span>
                     ))}
+
+                    {remainingCount > 0 && (
+                        <span className="px-3 py-1 bg-gray-700 text-gray-300 text-sm rounded-full">
+                            +{remainingCount} more
+                        </span>
+                    )}
                 </div>
                 
                 <button
@@ -61,7 +63,7 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-64 object-cover rounded mb-6"
+                                    className=""
                                 />
                             )}
 
@@ -94,6 +96,15 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                                         Close
                                     </Button>
                                 </div>
+                            )}
+
+                            {project.pdf && (
+                                <Button
+                                    variant="primary"
+                                    onClick={() => window.open(project.pdf, '_blank')}
+                                >
+                                    View PDF
+                                </Button>
                             )}
                         </div>
                     </div>
