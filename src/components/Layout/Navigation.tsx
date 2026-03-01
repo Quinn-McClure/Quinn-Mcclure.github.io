@@ -16,10 +16,10 @@ const Navigation = () => {
                         <NavLink
                             to={link.path}
                             className={({ isActive }) =>
-                                `text-sm font-medium transition-colors hover:text-gray-900 ${
+                                `text-sm font-medium transition-colors hover:text-primary ${
                                     isActive 
-                                        ? 'text-gray-900 border-b-2 border-gray-900' 
-                                        : 'text-gray-600'
+                                        ? 'text-on-bg-card border-b-2 border-primary' 
+                                        : 'text-on-bg-card/80'
                                 }`
                             }
                         >
