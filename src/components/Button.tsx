@@ -36,9 +36,9 @@ const Button = ({
     const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2'
 
     const variantStyles = {
-        primary: 'bg-gray-900 text-white hover:bg-gray-800 focus:ring-gray-900',
-        secondary: 'bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-600',
-        outline: 'border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900'
+        primary: 'bg-primary text-on-primary hover:bg-primary-hover focus:ring-primary',
+        secondary: 'bg-bg-card text-on-bg-card hover:bg-primary hover:text-on-primary focus:ring-primary',
+        outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-on-primary focus:ring-primary'
     }
 
     const sizeStyles = {
