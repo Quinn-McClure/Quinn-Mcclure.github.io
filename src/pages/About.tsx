@@ -5,6 +5,8 @@ import profilePic from "../assets/profilepic.png"
 const About = () => {
     const currentProject1 = projects.filter(p => [3].includes(p.id))
     const currentProject2 = projects.filter(p => [1].includes(p.id))
+    const currentProject3 = projects.filter(p => [4].includes(p.id))
+    const currentProject4 = projects.filter(p => [5].includes(p.id))
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
@@ -54,17 +56,17 @@ const About = () => {
             {/* Skills */}
             {/* Interests/Passions */}
             {/* Education/Certifications */}
-            <section className="md:py-6">
+            {/* <section className="md:py-6">
                 <p className="text-lg font-bold text-text">Certifications</p>
-            </section>
-            {/* Currently working on */}
+            </section> */}
+            {/* Currently working on
             <section className="md:py-6">
                 <p className="text-lg font-bold text-text">Current Projects</p>
                 <p className="text-base text-text-muted">
-                    The current projects that I am working on are my screenplay Prices and a wc command line tool! 
+                    The current projects that I am working on are my screenplay Prices, a wc command line tool, and a couple of other short film screenplays! 
                     Prices is a feature-length crime thriller/horror screenplay about a band of twenty-somethings 
                     on a night where everything seems to go wrong after they rob a stash house. The wc tool is a command line
-                    tool that you can use to count the number of bytes, lines, words, or characters in a file.
+                    tool that you can use to count the number of bytes, lines, words, or characters in a file. Check out the short film projects to see what they are about!
                 </p>
                 <br/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -74,8 +76,14 @@ const About = () => {
                     {currentProject2.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
+                    {currentProject3.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                    {currentProject4.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
                 </div>
-            </section>
+            </section> */}
         </div>
     );
   };

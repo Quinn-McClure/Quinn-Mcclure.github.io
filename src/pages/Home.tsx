@@ -1,7 +1,14 @@
 import heroBg from '../assets/banner-img.png'
 import Button from '../components/Button.tsx'
+import ProjectCard from "../components/ProjectCard";
+import { projects } from "../data/projects";
 
 const Home = () => {
+    const currentProject1 = projects.filter(p => [3].includes(p.id))
+    const currentProject2 = projects.filter(p => [1].includes(p.id))
+    const currentProject3 = projects.filter(p => [4].includes(p.id))
+    const currentProject4 = projects.filter(p => [5].includes(p.id))
+
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
             {/* Hero Section */}
@@ -32,10 +39,36 @@ const Home = () => {
                 <Button to="/about" className="mt-4">About Me</Button>
             </section>
 
+             {/* Currently working on */}
+             <section>
+                <p className="text-lg font-bold text-text">Current Projects</p>
+                <p className="text-base text-text-muted">
+                    The current projects that I am working on are my screenplay Prices, a wc command line tool, and a couple of other short film screenplays! 
+                    Prices is a feature-length crime thriller/horror screenplay about a band of twenty-somethings 
+                    on a night where everything seems to go wrong after they rob a stash house. The wc tool is a command line
+                    tool that you can use to count the number of bytes, lines, words, or characters in a file. Check out the short film projects to see what they are about!
+                </p>
+                <br/>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {currentProject1.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                    {currentProject2.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                    {currentProject3.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                    {currentProject4.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                </div>
+            </section>
+
             {/* <Featured Projects */}
-            <section>
+            <section className="md:py-16">
                 <p className="text-lg font-bold text-text">Projects</p>
-                <p className="text-text-muted">On display are projects across three of the main facets that I have a passion for: writing, developing, designing.</p>
+                <p className="text-text-muted">Explore even more of my projects across three of the main facets that I have a passion for: writing, developing, designing.</p>
                 <Button to="/projects" className="mt-4">All Projects</Button>
             </section>
         </div>
