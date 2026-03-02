@@ -61,9 +61,10 @@ const About = () => {
             <section className="md:py-6">
                 <p className="text-lg font-bold text-text">Current Projects</p>
                 <p className="text-base text-text-muted">
-                    The current project that I am working on, on top of getting this site up and running, is my 
-                    screenplay Prices! It is a feature-length crime thriller/horror screenplay that follows a band
-                    of twenty-somethings on a night where everything seems to go wrong after they rob a stash house.
+                    The current projects that I am working on are my screenplay Prices and a wc command line tool! 
+                    Prices is a feature-length crime thriller/horror screenplay about a band of twenty-somethings 
+                    on a night where everything seems to go wrong after they rob a stash house. The wc tool is a command line
+                    tool that you can use to count the number of bytes, lines, words, or characters in a file.
                 </p>
                 <br/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
