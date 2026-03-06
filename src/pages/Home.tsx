@@ -4,9 +4,8 @@ import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 
 const Home = () => {
-    const currentProject1 = projects.filter(p => [3].includes(p.id))
-    const currentProject2 = projects.filter(p => [1].includes(p.id))
-    const currentProject3 = projects.filter(p => [4].includes(p.id))
+    const currentProject1 = projects.filter(p => [4].includes(p.id))
+    const currentProject2 = projects.filter(p => [2].includes(p.id))
     const currentProject4 = projects.filter(p => [5].includes(p.id))
 
     return (
@@ -26,7 +25,7 @@ const Home = () => {
             <section className="md:py-16">
                 <p className="text-lg font-bold text-text">About this website</p>
                 <p className="text-base py-2 text-text-muted">
-                    Hi, there I am Quinn McClure! This website is a culmination of my passion projects and interests 
+                    Hi there, I am Quinn McClure! This website is a culmination of my passion projects and interests 
                     that I would like to share with you and the world, whether you are a potential client or just interested 
                     in what I have created. Initially when I wanted to make this site, I was mainly going to use it as just a
                     portfolio site for my programming projects for future employers. Thinking deeper however, I realized that
@@ -54,9 +53,6 @@ const Home = () => {
                         <ProjectCard key={project.id} project={project} />
                     ))}
                     {currentProject2.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
-                    ))}
-                    {currentProject3.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                     {currentProject4.map((project) => (
