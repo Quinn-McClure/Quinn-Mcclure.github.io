@@ -42,7 +42,7 @@ const Home = () => {
              <section>
                 <p className="text-lg font-bold text-text">Current Projects</p>
                 <p className="text-base text-text-muted">
-                    The current projects that I am working on are my screenplay Prices, a basic webserver in Rust, and a couple of other short film screenplays! 
+                    The current projects that I am working on are my screenplay Prices, a basic web server in Rust, and a couple of other short film screenplays! 
                     Check them out below to learn more!
                 </p>
                 <br/>
