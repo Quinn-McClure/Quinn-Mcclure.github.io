@@ -42,10 +42,8 @@ const Home = () => {
              <section>
                 <p className="text-lg font-bold text-text">Current Projects</p>
                 <p className="text-base text-text-muted">
-                    The current projects that I am working on are my screenplay Prices, a wc command line tool, and a couple of other short film screenplays! 
-                    Prices is a feature-length crime thriller/horror screenplay about a band of twenty-somethings 
-                    on a night where everything seems to go wrong after they rob a stash house. The wc tool is a command line
-                    tool that you can use to count the number of bytes, lines, words, or characters in a file. Check out the short film projects to see what they are about!
+                    The current projects that I am working on are my screenplay Prices, a basic webserver in Rust, and a couple of other short film screenplays! 
+                    Check them out below to learn more!
                 </p>
                 <br/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
