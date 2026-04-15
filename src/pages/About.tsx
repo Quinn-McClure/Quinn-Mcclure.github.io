@@ -1,13 +1,6 @@
-// import ProjectCard from "../components/ProjectCard";
-// import { projects } from "../data/projects";
 import profilePic from "../assets/profilepic.png"
 
 const About = () => {
-    // const currentProject1 = projects.filter(p => [3].includes(p.id))
-    // const currentProject2 = projects.filter(p => [1].includes(p.id))
-    // const currentProject3 = projects.filter(p => [4].includes(p.id))
-    // const currentProject4 = projects.filter(p => [5].includes(p.id))
-
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
             {/* Header */}

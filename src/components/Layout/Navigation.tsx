@@ -4,6 +4,7 @@ const Navigation = () => {
     const navLinks = [
         { path: '/', label: 'Home'},
         { path: '/projects', label: 'Projects'},
+        { path: '/professional', label: 'Professional'},
         { path: '/about', label: 'About'},
         { path: '/contact', label: 'Contact'},
     ]
