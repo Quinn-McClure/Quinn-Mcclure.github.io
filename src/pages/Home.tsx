@@ -36,26 +36,27 @@ const Home = () => {
                 <Button to="/about" className="mt-4">About Me</Button>
             </section>
 
+            <section>
+                <p className="text-lg font-bold text-text">Frameshift Dev LLC</p>
+                <p className="text-text-muted">Looking to hire a real human to help with your work? Explore my professional and personal projects and see if I will be a good fit for you.</p>
+                <Button to="/professional" className="mt-4">View Professional Projects</Button>
+            </section>
+
              {/* Currently working on */}
-             <section>
+             <section className="md:py-16">
                 <p className="text-lg font-bold text-text">Current Projects</p>
                 <p className="text-base text-text-muted">
                     The current projects that I am working on are my screenplay Prices, a basic web server in Rust, and a couple of other short film screenplays! 
                     Check them out below to learn more!
                 </p>
                 <br/>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {currentProject1.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
-            </section>
-
-            {/* <Featured Projects */}
-            <section className="md:py-16">
-                <p className="text-lg font-bold text-text">Projects</p>
-                <p className="text-text-muted">Explore even more of my projects across three of the main facets that I have a passion for: writing, developing, designing.</p>
-                <Button to="/projects" className="mt-4">All Projects</Button>
+                <Button to="/projects" className="mt-4">View All Projects</Button>
             </section>
         </div>
     );
