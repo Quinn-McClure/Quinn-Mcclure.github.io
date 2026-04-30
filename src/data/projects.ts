@@ -58,7 +58,7 @@ export const projects: Project[] = [
     {
         id: 5,
         title: 'Prices',
-        description: "Crime Thriller/Horror Screenplay",
+        description: "Crime/Thriller/Horror Screenplay",
         longDescription: "This is a feature-length crime thriller/horror screenplay that follows a rock band of twenty-somethings on a night were they are attacked by inhuman creatures after robbing a stash house.",
         scope: 'writing',
         tools: ['Creative Writing', 'Screen Writing'],
@@ -86,7 +86,7 @@ export const projects: Project[] = [
         id: 8,
         title: 'Sublease',
         description: "Horror Screenplay",
-        longDescription: "This is a short film about a rental unit that holds a sinister secret.",
+        longDescription: "This is a short film about a rental unit that holds a sinister secret. Filming will be starting soon!",
         scope: 'writing',
         tools: ['Creative Writing', 'Screen Writing'],
         pdf: '',
