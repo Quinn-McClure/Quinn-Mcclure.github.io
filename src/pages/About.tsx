@@ -29,7 +29,7 @@ const About = () => {
                     worked at the on-campus recreation center as a graphic designer for a couple of years.
                         </p>
                         <p className="text-base text-text-muted">
-                        After my graduation in December 2024, I worked for Tanduo Technical Partners Inc for a few months before getting laid off along
+                        After my graduation in December 2024, I worked for a small contracting company as a software engineer for a few months before getting laid off along
                     with half of the company due to economic factors. This caused a bit of turmoil in my life as I had graduated, 
                     gotten the job, then watched it slip away due to powers beyond my control. On top of this, I was also going through
                     some moves. Safe to say, I was in a rough spot. Once I got settled into a new city, I tried and tried to break back
@@ -49,34 +49,6 @@ const About = () => {
             {/* Skills */}
             {/* Interests/Passions */}
             {/* Education/Certifications */}
-            {/* <section className="md:py-6">
-                <p className="text-lg font-bold text-text">Certifications</p>
-            </section> */}
-            {/* Currently working on
-            <section className="md:py-6">
-                <p className="text-lg font-bold text-text">Current Projects</p>
-                <p className="text-base text-text-muted">
-                    The current projects that I am working on are my screenplay Prices, a wc command line tool, and a couple of other short film screenplays! 
-                    Prices is a feature-length crime thriller/horror screenplay about a band of twenty-somethings 
-                    on a night where everything seems to go wrong after they rob a stash house. The wc tool is a command line
-                    tool that you can use to count the number of bytes, lines, words, or characters in a file. Check out the short film projects to see what they are about!
-                </p>
-                <br/>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {currentProject1.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
-                    ))}
-                    {currentProject2.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
-                    ))}
-                    {currentProject3.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
-                    ))}
-                    {currentProject4.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
-                    ))}
-                </div>
-            </section> */}
         </div>
     );
   };

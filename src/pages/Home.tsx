@@ -37,7 +37,7 @@ const Home = () => {
             </section>
 
             <section>
-                <p className="text-lg font-bold text-text">Frameshift Dev LLC</p>
+                <p className="text-lg font-bold text-text">Professional Projects</p>
                 <p className="text-text-muted">Looking to hire a real human to help with your work? Explore my professional and personal projects and see if I will be a good fit for you.</p>
                 <Button to="/professional" className="mt-4">View Professional Projects</Button>
             </section>
@@ -46,16 +46,17 @@ const Home = () => {
              <section className="md:py-16">
                 <p className="text-lg font-bold text-text">Current Projects</p>
                 <p className="text-base text-text-muted">
-                    The current projects that I am working on are my screenplay Prices, a basic web server in Rust, and a couple of other short film screenplays! 
+                    The current projects that I am working on are writing a feature film, a short film, and a pilot episode, 
+                    filming my short film Sublease, and then I am also working on making an app! 
                     Check them out below to learn more!
                 </p>
                 <br/>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {currentProject1.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
-                </div>
+                </div> */}
                 <Button to="/projects" className="mt-4">View All Projects</Button>
             </section>
         </div>

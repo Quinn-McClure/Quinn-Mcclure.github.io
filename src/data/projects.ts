@@ -30,12 +30,12 @@ export const projects: Project[] = [
     },
     {
         id: 2,
-        title: 'Web Server',
-        description: "Basic Web Server",
-        longDescription: "This is a coding challenge I am currently working on where I am building a web server using Rust.",
+        title: 'Snake Game',
+        description: "Basic snake game written in Go",
+        longDescription: "This is a coding challenge where I am working to build a snake game in Go. This will be my first project in the Go programming language.",
         scope: 'coding',
-        tools: ['Rust'],
-        url: 'https://github.com/Quinn-McClure/Code-Challenges/tree/main/web-server',
+        tools: ['Go', 'Ebitenegine'],
+        url: 'https://github.com/Quinn-McClure/Code-Challenges/tree/main/snake',
     },
     {
         id: 3,
@@ -49,6 +49,14 @@ export const projects: Project[] = [
     },
     {
         id: 4,
+        title: 'Lending Library App',
+        description: "Mobile Application",
+        longDescription: "",
+        scope: 'coding',
+        url: '',
+    },
+    {
+        id: 5,
         title: 'Prices',
         description: "Crime Thriller/Horror Screenplay",
         longDescription: "This is a feature-length crime thriller/horror screenplay that follows a rock band of twenty-somethings on a night were they are attacked by inhuman creatures after robbing a stash house.",
@@ -57,7 +65,7 @@ export const projects: Project[] = [
         pdf: '',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Bad Days',
         description: "Thriller/Comedy Screenplay",
         longDescription: "This is a short film thriller/comedy screenplay about Ray, a man that has been cursed with seven years of bad luck after accidentally breaking a mirror.",
@@ -66,7 +74,7 @@ export const projects: Project[] = [
         pdf: '',
     },
     {
-        id: 6,
+        id: 7,
         title: 'Ghost Fight',
         description: "Horror/Comedy Screenplay",
         longDescription: "This is a short film horror/comedy screenplay about a man who moves into a haunted house and must fight to get the ghost out since he is too broke to move.",
@@ -75,7 +83,16 @@ export const projects: Project[] = [
         pdf: '',
     },
     {
-        id: 7,
+        id: 8,
+        title: 'Sublease',
+        description: "Horror Screenplay",
+        longDescription: "This is a short film about a rental unit that holds a sinister secret.",
+        scope: 'writing',
+        tools: ['Creative Writing', 'Screen Writing'],
+        pdf: '',
+    },
+    {
+        id: 9,
         title: 'The Queue',
         description: "Movie Reviewing",
         longDescription: "This is an extensive project where I have been writing and reviewing movies on Letterboxd and Instagram since February of 2021.",
@@ -85,7 +102,7 @@ export const projects: Project[] = [
         url: 'https://boxd.it/2R7Q9',
     },
     {
-        id: 8,
+        id: 10,
         title: 'La Crosse Bike Parking Installation',
         description: "Environmental Studies Capstone",
         longDescription: "This was a project I did for my Environmental Studies Capstone at the University of Wisconsin La Crosse where we successfully installed twenty new bike posts in the downtown area.",
@@ -95,7 +112,7 @@ export const projects: Project[] = [
         date: ''
     },
     {
-        id: 9,
+        id: 11,
         title: 'The Queue',
         description: "Movie Reviewing",
         longDescription: "Although also being featured in the Writing section, on the Instagram portion I create my own posts utilizing my design skills.",
@@ -106,7 +123,7 @@ export const projects: Project[] = [
         date: ''
     },
     {
-        id: 10,
+        id: 12,
         title: 'Full Focus Poster',
         description: "Motivational Poster",
         longDescription: "I made this poster in school to hang in my office to keep up my motivation.",
