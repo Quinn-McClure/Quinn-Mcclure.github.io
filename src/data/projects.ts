@@ -115,7 +115,7 @@ export const projects: Project[] = [
         id: 11,
         title: 'The Queue',
         description: "Movie Reviewing",
-        longDescription: "Although also being featured in the Writing section, on the Instagram portion I create my own posts utilizing my design skills.",
+        longDescription: "Although also being featured in the Writing section, on the Instagram portion I create my own posts utilizing my design skills. The base graphics were made by Peter Kopperud.",
         scope: 'design',
         tools: ['Canva', 'Instagram', 'Adobe Illustrator'],
         image: instagramProfile,
