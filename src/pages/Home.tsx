@@ -31,7 +31,7 @@ const Home = () => {
                     are also fields I would like to expand and grow in. 
                 </p>
                 <p className="text-base text-text-muted">
-                    If you are interested to hear more about my journey so far, click below
+                    If you are interested to hear more about my journey so far, click below:
                 </p>
                 <Button to="/about" className="mt-4">About Me</Button>
             </section>
@@ -40,8 +40,7 @@ const Home = () => {
              <section>
                 <p className="text-lg font-bold text-text">Current Projects</p>
                 <p className="text-base text-text-muted">
-                    The current projects that I am working on are my screenplay Prices, a basic web server in Rust, and a couple of other short film screenplays! 
-                    Check them out below to learn more!
+                    Check them out to learn more!
                 </p>
                 <br/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
